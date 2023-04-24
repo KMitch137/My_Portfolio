@@ -1,15 +1,35 @@
 body {
-    background-color: rgb(121, 112, 112);
+    /* background-color: rgb(121, 112, 112); */
+}
+
+:root {
+    --green: rgb(162, 184, 156);
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+h3 {
+    font-size: larger;
 }
 
 header {
+    background-color: rgb(121, 112, 112);
+    font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     /* background-color: black; */
-    color: rgb(162, 184, 156);
+    color: var(--green);
     /* justify-content: space-between; */
     width: 100%;
     align-items: center;
+    border: 5px solid #000;
+    margin-bottom: 75px;
 }
 
 header img{
@@ -17,6 +37,7 @@ header img{
     height: 200px;
     width: 200px;
     margin-right: 25px;
+    border-right: 5px solid black;
 }
 
 nav{
@@ -24,24 +45,75 @@ nav{
     margin-left: auto;
 }
 
-nav li:hover{
-    color: rgb(0, 0, 0);
-}
 nav li {
     display:inline-block;
     flex: wrap;
     min-width: 100px;
     justify-content: space-between;
+    margin: 5px;
     
 }
 
 nav li a:visited{ 
-    color: rgb(65, 163, 36);
+    color: var(--green);
+}
+
+#aboutme {
+    flex-direction: row;
+    display: inline-flex;
+    border-bottom: 5px dashed black;
+}
+#aboutme h2 {
+    color: var(--green);
+    /* max-width: fit-content; */
+    min-height: 75px;
+    text-align: center;
+    border-right: 5px solid black;
+    padding-right: 15px;
+    /* display: inline-flex; */
+    padding-right: 50px; 
+}
+
+#aboutme p{ 
+    margin-left: 25px;
+    font-size: large;
+    /* display: inline-flex; */
+    justify-content: flex-end;
+}
+
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#work h2 {
+    color: var(--green);
+    /* max-width: fit-content; */
+    min-height: 75px;
+    text-align: center;
+    padding-right: 15px;
+    /* display: inline-flex; */
+    padding-right: 50px;
+}
+
+.card {
+    flex: auto;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    margin: 2px;
+}
+
+.card :hover{
+    color: red;
 }
 
 footer {
-    /* background-color: black; */
-    color: rgb(162, 184, 156);
+    background-color: rgb(121, 112, 112);
+    color: var(--green);
+    margin-top: auto;
 }
 
 footer li {
