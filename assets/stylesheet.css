@@ -1,5 +1,5 @@
 body {
-    /* background-color: rgb(121, 112, 112); */
+    background-color: rgb(121, 112, 112);
 }
 
 :root {
@@ -7,15 +7,19 @@ body {
 }
 
 h1 {
-    font-size: xx-large;
+    font-size: 100px;
 }
 
 h2 {
-    font-size: x-large;
+    font-size: 50px;
 }
 
 h3 {
-    font-size: larger;
+    font-size: 25px;
+}
+
+p {
+    line-height: 150%;
 }
 
 header {
@@ -23,9 +27,7 @@ header {
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
-    /* background-color: black; */
     color: var(--green);
-    /* justify-content: space-between; */
     width: 100%;
     align-items: center;
     border: 5px solid #000;
@@ -65,45 +67,47 @@ nav li a:visited{
 }
 #aboutme h2 {
     color: var(--green);
-    /* max-width: fit-content; */
     min-height: 75px;
-    text-align: center;
     border-right: 5px solid black;
     padding-right: 15px;
-    /* display: inline-flex; */
     padding-right: 50px; 
 }
 
 #aboutme p{ 
     margin-left: 25px;
     font-size: large;
-    /* display: inline-flex; */
     justify-content: flex-end;
 }
 
 #work {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     margin-top: 50px;
+    flex: 500px;
 }
 
 #work h2 {
     color: var(--green);
-    /* max-width: fit-content; */
-    min-height: 75px;
+    min-height: 150px;
+    padding-top: 75px;
+    padding-bottom: 30px;
+    width: 100%;
     text-align: center;
-    padding-right: 15px;
-    /* display: inline-flex; */
-    padding-right: 50px;
+    
 }
 
-.card {
+.card1, .card2, .card3, .card4, .card5 {
     flex: auto;
     padding: 10px;
     text-align: center;
     border-style: solid;
     border-width: 3px;
     margin: 2px;
+}
+
+.card1 {
+    flex: 100%;
+
 }
 
 .card :hover{
@@ -113,7 +117,7 @@ nav li a:visited{
 footer {
     background-color: rgb(121, 112, 112);
     color: var(--green);
-    margin-top: auto;
+    margin-top: 100px;
 }
 
 footer li {
