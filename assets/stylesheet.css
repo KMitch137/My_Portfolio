@@ -1,38 +1,47 @@
 body {
-    background-color: bisque;
+    background-color: rgb(121, 112, 112);
 }
 
 header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
-    background-color: black;
-    color: rgb(65, 163, 36);
-    justify-content: space-between;
+    /* background-color: black; */
+    color: rgb(162, 184, 156);
+    /* justify-content: space-between; */
     width: 100%;
     align-items: center;
 }
 
+header img{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    margin-right: 25px;
+}
+
 nav{
     display: block;
+    margin-left: auto;
 }
 
 nav li:hover{
-    color: red;
+    color: rgb(0, 0, 0);
 }
 nav li {
     display:inline-block;
+    flex: wrap;
     min-width: 100px;
     justify-content: space-between;
+    
 }
 
 nav li a:visited{ 
     color: rgb(65, 163, 36);
 }
 
-
 footer {
-    background-color: black;
-    color: rgb(65, 163, 36);
+    /* background-color: black; */
+    color: rgb(162, 184, 156);
 }
 
 footer li {
