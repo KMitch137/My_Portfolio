@@ -1,0 +1,42 @@
+body {
+    background-color: bisque;
+}
+
+header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    background-color: black;
+    color: rgb(65, 163, 36);
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+nav{
+    display: block;
+}
+
+nav li:hover{
+    color: red;
+}
+nav li {
+    display:inline-block;
+    min-width: 100px;
+    justify-content: space-between;
+}
+
+nav li a:visited{ 
+    color: rgb(65, 163, 36);
+}
+
+
+footer {
+    background-color: black;
+    color: rgb(65, 163, 36);
+}
+
+footer li {
+    display: block;
+    min-width: 100px;
+    padding: 5px;
+}
