@@ -92,7 +92,7 @@ nav li a:visited{
     color: var(--green);
     min-height: 150px;
     padding-top: 75px;
-    padding-bottom: 30px;
+    padding-bottom: 30px;                          
     width: 100%;
     text-align: center;
     
@@ -133,3 +133,14 @@ footer li {
     min-width: 100px;
     padding: 5px;
 }
+/* 
+@media screen and (max-width: 992px) {
+    header {
+      width: 100%%;
+    }
+}
+@media screen and (min-width: 992px) {
+    #work {
+      justify-content: center;
+    }
+} */
