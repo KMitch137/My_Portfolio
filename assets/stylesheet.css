@@ -57,7 +57,7 @@ nav li {
     min-width: 100px;
     justify-content: space-between;
     margin: 5px;
-
+    color: var(--green);
 }
 
 nav li a:visited {
